@@ -1,3 +1,5 @@
+<!-- part 5 begins here -->
+
 Student Management & Sorting System
 What It Is
 This is a simple Java project that shows how to use basic programming concepts like object-oriented design, data structures, sorting, and saving data to a file. It manages a list of undergraduate and graduate students.
@@ -20,7 +22,7 @@ Put all .java files in the same folder.
 
 Open a terminal and go to that folder.
 
-Compile the code: javac *.java
+Compile the code: javac \*.java
 
 Run the main programs:
 
@@ -42,14 +44,15 @@ StudentRegistry.java: Manages the student list and file I/O.
 Main.java: A simple program to demonstrate sorting and searching.
 
 Quick Comparisons
+
 1. Data Structures
-Arrays: Good for data that doesn't change size. Fast access.
+   Arrays: Good for data that doesn't change size. Fast access.
 
 ArrayLists: The best all-around choice. Flexible size and still has fast access.
 
 LinkedLists: Best for lists that have a lot of additions and removals, but slow for searching.
 
 2. Our Program vs. Real AI
-Our Program (Rule-Based): Follows strict, hand-written rules. It's predictable but can't handle anything it wasn't programmed for. It doesn't learn.
+   Our Program (Rule-Based): Follows strict, hand-written rules. It's predictable but can't handle anything it wasn't programmed for. It doesn't learn.
 
 Real AI (Learning-Based): Learns its own rules by finding patterns in data. It's flexible and can adapt, but its reasoning isn't always obvious.
