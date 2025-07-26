@@ -1,5 +1,7 @@
 public class LinkedList<T> {
   // Ayro Escobar Part 1 & 2
+  //create private class Node
+  // This class represents a single node in the linked list
   private class Node {
     T data;
     Node next;
@@ -22,7 +24,7 @@ public class LinkedList<T> {
     this.size = 0;
   }
 
-  // Method to be used for sorting methods :)
+  // helper method for sorting methods
   public int size() {
     return size;
   }
@@ -82,6 +84,7 @@ public class LinkedList<T> {
     size++;
   }
 
+  //removal by-value method
   public boolean removeByValue(T value) {
     if (head == null) {
       return false;
@@ -112,6 +115,7 @@ public class LinkedList<T> {
     return false;
   }
 
+  //removal by specifying index
   public T removeAt(int index) {
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
@@ -292,6 +296,8 @@ public class LinkedList<T> {
     }
   }
 
+
+  // Linear Search
   public int linearSearch(T target) {
     Node current = head;
     int index = 0;
