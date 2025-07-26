@@ -1,5 +1,6 @@
+/*parts 1 and 2 begin here*/
 public class LinkedList<T> {
-  // Ayro Escobar Part 1 & 2
+
   //create private class Node
   // This class represents a single node in the linked list
   private class Node {
