@@ -1,16 +1,18 @@
 public class UndergraduateStudent extends Student {
     private static final long serialVersionUID = 1L;
     private String major;
+    private double gpa;
+    private int credits;
 
-    public UndergraduateStudent(String studentId, String name, String major) {
-        super(studentId, name);
-
-        if (!studentId.matches("U\\d+")) {
-            throw new IllegalArgumentException("Invalid Undergraduate ID format. Must be 'U' followed by numbers (e.g., U12345).");
-        }
-
-        this.major = major;
+    public UndergraduateStudent(String studentId, String name, String major, double gpa, int credits) {
+    super(studentId, name);
+    if (!studentId.matches("U\\d+")) {
+        throw new IllegalArgumentException("Invalid Undergraduate ID...");
     }
+    this.major = major;
+    this.gpa = gpa;
+    this.credits = credits;
+}
 
     public String getMajor() {
         return major;
@@ -25,4 +27,14 @@ public class UndergraduateStudent extends Student {
     public String toString() {
         return super.toString() + ", Major: " + major;
     }
+
+    @Override
+public double getGpa() {
+    return gpa;
+}
+
+@Override
+public int getCredits() {
+    return credits;
+}
 }

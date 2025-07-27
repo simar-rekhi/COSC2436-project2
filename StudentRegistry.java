@@ -62,12 +62,12 @@ public class StudentRegistry {
 
         System.out.println("--- Creating Students ---");
         try {
-            registry.addStudent(new UndergraduateStudent("U101", "Alice Smith", "Computer Science"));
-            registry.addStudent(new GraduateStudent("G202", "Bob Johnson", "AI Ethics"));
-            registry.addStudent(new UndergraduateStudent("U103", "Charlie Brown", "Physics"));
+            registry.addStudent(new UndergraduateStudent("U101", "Alice Smith", "Computer Science", 3.6, 30));
+            registry.addStudent(new GraduateStudent("G202", "Bob Johnson", "AI Ethics", 3.0, 20));
+            registry.addStudent(new UndergraduateStudent("U103", "Charlie Brown", "Physics", 2.5, 28));
 
             System.out.println("\nAttempting to create a student with an invalid ID...");
-            registry.addStudent(new GraduateStudent("GRAD-404", "David Dame", "Quantum Computing"));
+            registry.addStudent(new GraduateStudent("GRAD-404", "David Dame", "Quantum Computing", 3.2, 25));
 
         } catch (IllegalArgumentException e) {
             System.err.println("🚨 Creation Failed! " + e.getMessage());

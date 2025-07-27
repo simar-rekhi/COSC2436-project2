@@ -6,28 +6,42 @@
     -> creates tagNewStudent() method which tags a NEW user.
 */
 
+import java.io.Serializable;
+
 public class StudentManager {
     //adding attributes for the class
     private Predictor predictor = new Predictor(); //obj of Predictor type
     private LinkedList<Student> students; //generic list that runs common through the entire program -- can be changed later
 
-
+    public StudentManager() {
+        students = new LinkedList<>();
+    }
     //defining methods
-    //tagPrevStudent() 
-    public void tagPrevStudent() {
-        //using range-based for loop
-        for(Student s : students) {
-            String tag = predictor.classifyPerformance(s);
-            s.setPerformanceLabel(tag); //needs to be changed as per part 3 --> based on what Atrin adds
+    //tagPrevStudent() for previously loaded students
+    public void tagPrevStudents() {
+        for (int i = 0; i < students.size(); i++) {
+            Student s = students.get(i);
+            String tag = predictor.classifyPerformance(s); 
+            s.setPerformanceLabel(tag);
         }
     }
 
-    //tagNewStudent()
-    public void tagNewStudent() {
+    //tagNewStudent() for new additions
+    public void tagNewStudent(Student s) {
         String tag = predictor.classifyPerformance(s);
         s.setPerformanceLabel(tag);
-        //also adds new data to the linked list 
-        students.add(s);
+        students.insertAtTail(s);
         System.out.println("Performance: " + tag);
+    }
+
+    public void displayAll() {
+        for (int i = 0; i < students.size(); i++) {
+            Student s = students.get(i);
+            System.out.println(s + " | Performance: " + s.getPerformanceLabel());
+        }
+    }
+
+    public LinkedList<Student> getStudents() {
+        return students;
     }
 }

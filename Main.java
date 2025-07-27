@@ -5,22 +5,43 @@
 
 // PRELIMINARY TESTING WINDOW -------------------
 public class Main {
-  public static void main(String[] args) {
-    LinkedList<Integer> list = new LinkedList<>();
-    list.insertAtHead(3);
-    list.insertAtTail(5);
-    list.insertAt(1, 4);
-    list.display(); // Should display [3, 4, 5]
+    public static void main(String[] args) {
+        // Testing linked list with Student objects
+        LinkedList<Student> studentList = new LinkedList<>();
 
-    list.bubbleSort();
-    System.out.println("After Bubble Sort: " + list); // [3, 4, 5]
+        Student s1 = new UndergraduateStudent("U001", "Alice", "CS", 3.6, 35);
+        Student s2 = new GraduateStudent("G001", "Bob", "AI", 2.9, 20);
+        Student s3 = new UndergraduateStudent("U002", "Charlie", "Math", 1.8, 28);
 
-    list.selectionSort();
-    System.out.println("After Selection Sort: " + list); // [3, 4, 5]
+        studentList.insertAtTail(s1);
+        studentList.insertAtTail(s2);
+        studentList.insertAtTail(s3);
 
-    int index = list.linearSearch(4);
-    System.out.println("Index of 4: " + index); // 1
-  }
+        System.out.println("Original Student List:");
+        studentList.display();
+
+        // Sorting & Displaying
+        studentList.selectionSort();
+        System.out.println("\nAfter Selection Sort:");
+        studentList.display();
+
+        // Searching
+        int index = studentList.linearSearch(s2);
+        System.out.println("\nIndex of Bob: " + index);
+
+        // Classification
+        System.out.println("\n--- Performance Predictions ---");
+        for (int i = 0; i < studentList.size(); i++) {
+            Student s = studentList.get(i);
+            Predictor predictor = new Predictor();
+            String performance = predictor.classifyPerformance(s);
+            System.out.println(s.getName() + " - " + performance);
+        }
+
+        // Display test
+        Student testNew = new UndergraduateStudent("U009", "Daisy", "Biology", 3.9, 31);
+        Predictor predictor = new Predictor();
+        String pred = predictor.classifyPerformance(testNew);
+        System.out.println("\nNew student classification (Daisy): " + pred);
+    }
 }
-
-

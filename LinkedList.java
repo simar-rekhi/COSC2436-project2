@@ -1,7 +1,6 @@
 /*parts 1 and 2 begin here*/
 
 public class LinkedList<T> {
-public class LinkedList<T> {
 
   //create private class Node
   // This class represents a single node in the linked list
