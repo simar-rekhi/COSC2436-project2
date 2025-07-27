@@ -1,4 +1,7 @@
 <!-- part 5 begins here -->
+### Note! 
+<ul>Screenshots of outputs have been added to /output_images</ul>
+<ul>Full Output Content Log Pasted into output.txt</ul>
 
 ## Part 5
 
