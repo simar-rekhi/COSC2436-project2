@@ -1,0 +1,98 @@
+PS C:\DevTools\Projects\COSC2436-project2> javac *.java
+PS C:\DevTools\Projects\COSC2436-project2> java Main
+Original Student List:
+[ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+After Selection Sort:
+[ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+Index of Bob: 0
+
+--- Performance Predictions ---
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+
+
+After Selection Sort:
+[ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+Index of Bob: 0
+
+--- Performance Predictions ---
+Bob - On Track
+Alice - Honor Roll
+
+After Selection Sort:
+[ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+
+
+After Selection Sort:
+[ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+Index of Bob: 0
+
+--- Performance Predictions ---
+
+After Selection Sort:
+[ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+Index of Bob: 0
+
+--- Performance Predictions ---
+Bob - On Track
+Alice - Honor Roll
+After Selection Sort:
+[ID: G001, Name: Bob, Type: Graduate, Thesis: AI, ID: U001, Name: Alice, Type: Undergraduate, Major: CS, ID: U002, Name: Charlie, Type: Undergraduate, Major: Math]
+
+Index of Bob: 0
+
+--- Performance Predictions ---
+
+Index of Bob: 0
+
+--- Performance Predictions ---
+
+--- Performance Predictions ---
+--- Performance Predictions ---
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+
+New student classification (Daisy): Honor Roll
+PS C:\DevTools\Projects\COSC2436-project2> touch .gitignore
+Touching .gitignore
+PS C:\DevTools\Projects\COSC2436-project2> git add .
+PS C:\DevTools\Projects\COSC2436-project2> git commit -m "successful deployment"
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+
+New student classification (Daisy): Honor Roll
+PS C:\DevTools\Projects\COSC2436-project2> touch .gitignore
+Touching .gitignore
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+
+New student classification (Daisy): Honor Roll
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+Bob - On Track
+Alice - Honor Roll
+Bob - On Track
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+
+New student classification (Daisy): Honor Roll
+PS C:\DevTools\Projects\COSC2436-project2> touch .gitignore
+Touching .gitignore
+PS C:\DevTools\Projects\COSC2436-project2> git add .
+Bob - On Track
+Alice - Honor Roll
+Charlie - High Risk
+
+New student classification (Daisy): Honor Roll
